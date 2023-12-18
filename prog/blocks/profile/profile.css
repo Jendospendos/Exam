@@ -1,0 +1,38 @@
+
+.profile{
+  max-width: 800;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5%;
+  background-color: silver;
+}
+
+.profile__title{
+  margin: 20px auto 0 auto;
+}
+
+.profile__image{
+  max-width: 200px;
+  margin: 20px auto 0 auto;
+}
+
+.profile__image_unvisiable{
+  opacity: 0;
+}
+
+.profile__input{
+  margin: 20px auto 0 auto;
+  
+
+}
+
+.profile__button{
+  margin: 20px auto 20px auto;
+  
+}
+.pokypka{
+  text-align: center;
+  color: gray;
+}

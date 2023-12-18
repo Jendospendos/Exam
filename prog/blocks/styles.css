@@ -1,0 +1,11 @@
+@import "/blocks/normalize.css";
+@import "/blocks/__header/h1.css";
+@import "/blocks/__main/profile.css";
+@import "/blocks/__main/button.css";
+@import "/blocks/footer.css;";
+
+header {
+    width: 1000px;
+    background-color: rgb(0, 0, 0);
+}
+

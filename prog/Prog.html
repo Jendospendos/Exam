@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program</title>
+  <link rel="stylesheet" href="./pages/Prog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="root">
+  
+  <h1 class="root__title">Honda models</h1>
+  <dialog id="profile-id">
+    <form class="profile">
+      <img src="./images/reklama.png" class="profile__image " alt="Honda_logo">
+      <input class="profile__input" placeholder="Имя" type="text" id="Profile__Input_Name" name="ProfileName"  minlength="1" required>
+      <br> 
+     
+      <input class="profile__input" placeholder="Номер телефона" type="text" id="Profile__Input_About" name="ProfileAbout">
+      <div class="pokypka">
+      <p> Для покупки одной из представленных моделей заполните форму для обратной связи</p>
+    </div>
+      <button class="profile__button" type="submit">Отправить</button>
+    </form>
+    <form method="dialog">
+      <button class="popup__close-button">
+            <span class="visually-hidden">X</span>
+        </button>
+    </form> 
+  </dialog>
+    <section class="menu">
+      <div class="menu__container">
+        <button 
+          id="menu__button_addimage" 
+          class="menu__button" 
+          type="button"
+          onclick="window['dialog-id'].showModal()" 
+          aria-controls="dialog-id"
+          >Добавить автомобиль
+        </button>
+        <button 
+          id="menu__button_changeProfile" 
+          class="menu__button" 
+          type="button"
+          onclick="window['profile-id'].showModal()" 
+          aria-controls="profile-id"
+          >КУПИТЬ</button>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+  
+   
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <image class="zoom-image"></image>
+         </div>
+         <div class="inf0__1">
+          <p> Honda Prelude — двухдверное, четырёхместное спортивное купе производства компании Honda. Производилось с 1978 года. Снято с производства в 2000 году из-за высокой себестоимости и низкого спроса. Все модели производились с приводом на передние колеса и только с четырёхцилиндровыми рядными двигателями.</p>
+         </div>
+        
+
+        <div class="modal-footer">
+        </div>
+      </div>
+    
+    </div>
+    
+    <section class="cards">
+      
+    </section>
+    <dialog id="dialog-id">  
+      <form class="popup" id="form1">
+        <h2 class="popup__title">Добавить изображение</h2>    
+        <input
+          class="popup__input"
+          placeholder="Ссылка"
+          type="text"
+          id="popup__input_link"
+          name="popupLink"
+        >
+        <input
+          class="popup__input"
+          placeholder="Название"
+          type="text"
+          id="popup__input_title"
+          name="popupTitle"
+        >
+        <button class="popup__button" type="button"
+          onclick="window['dialog-id'].close()"
+        >Отправить</button>
+      </form>
+      <form method="dialog">
+        <button class="popup__close-button">
+              <span class="visually-hidden">X</span>
+          </button>
+      </form> 
+    </dialog>
+  
+  
+    <template id="card">
+      <figure class="card scale">
+        <button type="button" class="button card__remove"></button>
+        <img class="card__image " src="#" alt="#" id="#card__image" />
+        <figcaption class="card__caption">
+          <h2 class="card__title"></h2>
+          <div class="card__like-block">
+            <button type="button" class="card__like"></button>
+            <p class="card__like-counter"></p>
+          </div>
+        </figcaption>
+      </figure>
+    </template>
+    <script type="module" src="./pages/Prog.js"></script>
+</body>
+<footer class="footer">
+  <p>
+    Выполнил студент группы УиТС-41
+  </p>
+</footer>
+</html>
+
